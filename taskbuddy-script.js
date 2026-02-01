@@ -8,7 +8,6 @@ const clearAllBtn = document.getElementById("clear-all");
 const messageBox = document.getElementById("input-message");
 const emptyState = document.getElementById("empty-state");
 
-// اس لائن سے وہ خالی پٹی (placeholder bar) شروع میں غائب ہو جائے گی
 messageBox.style.display = "none";
 
 // ====== Load Tasks From LocalStorage ======
@@ -168,4 +167,5 @@ searchInput.addEventListener("input", () => {
 });
 
 // ====== Load on Page Start ======
+
 window.onload = loadTasks;
