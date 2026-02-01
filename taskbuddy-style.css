@@ -239,32 +239,7 @@ h1 {
     color: #e73c7e;
     transform: scale(1.05);
 }
-/* ===== MOBILE FIX - Input + Add Task Button in Same Row ===== */
-@media (max-width: 600px) {
-    .input-section {
-        display: flex;
-        flex-direction: row; /* single line */
-        gap: 8px; /* input aur button ke darmiyan gap */
-        width: 100%;
-        align-items: center;
-    }
 
-    #task-input {
-        flex: 1; /* input flexible, button ke sath fit ho */
-        min-width: 0; /* flex shrink ke liye zaruri */
-        font-size: 0.9em;
-        padding: 10px 12px;
-        border-radius: 12px;
-    }
-
-    #add-task-button {
-        flex: 0 0 auto; /* button fixed size, shrink ya grow na ho */
-        padding: 10px 16px;
-        font-size: 0.9em;
-        border-radius: 12px;
-        white-space: nowrap; /* text line break na ho */
-    }
-}
 /* ===== MOBILE FIX - Perfect Alignment ===== */
 @media (max-width: 600px) {
     .taskbuddy-app {
