@@ -313,8 +313,9 @@ h1 {
 
     #add-task-button {
         flex: 0 0 auto; /* button fixed size */
-        padding: 10px 16px;
+        padding: 10px 14px;
         font-size: 0.9em;
         border-radius: 10px;
     }
 }
+
