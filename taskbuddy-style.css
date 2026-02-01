@@ -285,3 +285,37 @@ h1 {
     color: rgba(255,255,255,0.85);
     font-size: 0.9em;
 }
+/* ===== MOBILE FIX - Input + Button on Same Line ===== */
+@media (max-width: 600px) {
+    .taskbuddy-app {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #search-task {
+        font-size: 0.9em;
+    }
+
+    .input-section {
+        display: flex;
+        flex-direction: row; /* Ek hi line me input aur button */
+        gap: 8px;
+    }
+
+    #task-input {
+        flex: 1; /* input flexible, button ke sath fit ho */
+        font-size: 0.9em;
+        padding: 10px 14px;
+    }
+
+    #add-task-button {
+        flex: 0 0 auto; /* button fixed size */
+        padding: 10px 16px;
+        font-size: 0.9em;
+        border-radius: 10px;
+    }
+}
+
