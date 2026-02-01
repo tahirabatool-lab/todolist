@@ -286,45 +286,36 @@ h1 {
     font-size: 0.9em;
 }
 /* ===== MOBILE FIX - Input + Button on Same Line ===== */
-/* ===== MOBILE FIX - Optimized for Small Screens ===== */
+
 @media (max-width: 600px) {
     .taskbuddy-app {
-        padding: 15px; /* Reduced padding to give more room inside */
-        width: 98%;    /* Slightly wider on mobile */
+        padding: 20px;
     }
 
     h1 {
         font-size: 1.8em;
     }
 
+    #search-task {
+        font-size: 0.9em;
+    }
+
     .input-section {
         display: flex;
-        flex-direction: row; 
+        flex-direction: row; /* Ek hi line me input aur button */
         gap: 8px;
-        width: 100%; /* Ensures it stays within the container */
-        overflow: hidden; /* Prevents button bleed-out */
     }
 
     #task-input {
-        flex: 1; 
-        min-width: 0; /* CRITICAL: Allows flex items to shrink below their content size */
+        flex: 1; /* input flexible, button ke sath fit ho */
         font-size: 0.9em;
-        padding: 10px 12px;
+        padding: 10px 14px;
     }
 
     #add-task-button {
-        flex-shrink: 0; /* Prevents the button from becoming too tiny */
-        padding: 10px 12px;
-        font-size: 0.85em; /* Slightly smaller font for mobile */
-        white-space: nowrap; /* Keeps text on one line */
-    }
-    
-    .clear-buttons {
-        flex-direction: column; /* Stack clear buttons on mobile for better fit */
-        align-items: center;
-    }
-    
-    .clear-buttons button {
-        width: 100%; /* Full width buttons are easier to tap on mobile */
+        flex: 0 0 auto; /* button fixed size */
+        padding: 10px 16px;
+        font-size: 0.9em;
+        border-radius: 10px;
     }
 }
