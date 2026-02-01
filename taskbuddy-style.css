@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #23a6d5, #23d5ab);
+    background: linear-gradient(135deg, #23a6d5, #23d5ab); /* Blue gradient only */
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     display: flex;
@@ -232,12 +232,28 @@ h1 {
     font-size: 0.95em;
     font-weight: 600;
     transition: all 0.3s;
-}
+} 
 
 .clear-buttons button:hover {
     background: #fff;
     color: #e73c7e;
     transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .taskbuddy-app {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #task-input,
+    #add-task-button,
+    #search-task {
+        font-size: 0.9em;
+    }
 }
 
 .input-message {
@@ -269,49 +285,36 @@ h1 {
     color: rgba(255,255,255,0.85);
     font-size: 0.9em;
 }
-
-/* ===== MOBILE FIX - Input + Button Perfect Alignment ===== */
+/* ===== MOBILE FIX - Input + Button on Same Line ===== */
 @media (max-width: 600px) {
     .taskbuddy-app {
-        padding: 15px;
-        width: 95%;
+        padding: 20px;
     }
 
     h1 {
         font-size: 1.8em;
     }
 
+    #search-task {
+        font-size: 0.9em;
+    }
+
     .input-section {
         display: flex;
-        flex-direction: row; /* single line */
+        flex-direction: row; /* Ek hi line me input aur button */
         gap: 8px;
-        width: 100%;
     }
 
     #task-input {
-        flex: 1;
-        min-width: 0; /* ensures button doesn't wrap */
+        flex: 1; /* input flexible, button ke sath fit ho */
         font-size: 0.9em;
-        padding: 10px 12px;
+        padding: 10px 14px;
     }
 
     #add-task-button {
-        flex: 0 0 auto; /* keeps button fixed */
+        flex: 0 0 auto; /* button fixed size */
         padding: 10px 16px;
         font-size: 0.9em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* Stack clear buttons for mobile */
-    .clear-buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .clear-buttons button {
-        width: 100%;
-        max-width: none;
+        border-radius: 10px;
     }
 }
