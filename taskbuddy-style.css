@@ -265,3 +265,50 @@ h1 {
         white-space: nowrap; /* text line break na ho */
     }
 }
+/* ===== MOBILE FIX - Perfect Alignment ===== */
+@media (max-width: 600px) {
+    .taskbuddy-app {
+        padding: 15px; /* Thoda space andar barhane ke liye */
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .input-section {
+        display: flex;
+        flex-direction: row; /* Force single line */
+        align-items: stretch; 
+        gap: 8px; /* Input aur button ke darmiyan gap */
+        width: 100%;
+    }
+
+    #task-input {
+        flex: 1; 
+        min-width: 0; /* Sabse zaroori: takay input button ko bahar na phenke */
+        font-size: 0.9em;
+        padding: 10px 12px;
+    }
+
+    #add-task-button {
+        flex-shrink: 0; /* Button ko chota hone se rokta hai */
+        white-space: nowrap; /* Text ko line change karne se rokta hai */
+        padding: 0 15px;
+        font-size: 0.9em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Clear buttons ko mobile par stack karna behtar rehta hai */
+    .clear-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .clear-buttons button {
+        width: 100%;
+        max-width: none;
+    }
+}
