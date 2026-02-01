@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskBuddy Pro</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="taskbuddy-style.css">
+</head>
+
+<body>
+    <main class="taskbuddy-app">
+        <h1>TaskBuddy To-Do List</h1>
+
+        <input type="text" id="search-task" placeholder="Search tasks..." />
+
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="Add a new task..." />
+            <button id="add-task-button">Add Task</button>
+        </div>
+
+        <p id="input-message" class="input-message"></p>
+        <p id="empty-state" class="empty-state">No tasks yet ✨</p>
+
+        <ul id="task-list"></ul>
+
+        <div class="clear-buttons">
+            <button id="clear-completed">Clear Completed Tasks</button>
+            <button id="clear-all">Clear All Tasks</button>
+        </div>
+
+        <p class="footer">Built with ❤️ by Tahira Batool</p>
+    </main>
+
+    <script src="taskbuddy-script.js"></script>
+</body>
+</html>
