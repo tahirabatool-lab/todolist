@@ -91,9 +91,9 @@ function addTask() {
 
     // Empty validation
     if (text === "") {
-        messageBox.textContent = "Please enter a task 🙂";
+        messageBox.textContent = "Please enter a task ";
         messageBox.classList.add("error");
-        messageBox.style.display = "block"; // میسج ہونے پر پٹی دکھائیں
+        messageBox.style.display = "block";
         checkEmpty(); 
         return;
     }
@@ -105,12 +105,11 @@ function addTask() {
     if (duplicate) {
         messageBox.textContent = "Task already exists!";
         messageBox.classList.add("error");
-        messageBox.style.display = "block"; // میسج ہونے پر پٹی دکھائیں
+        messageBox.style.display = "block"; 
         checkEmpty();
         return;
     }
 
-    // جب ٹاسک صحیح طریقے سے ایڈ ہو جائے تو میسج اور پٹی غائب کر دیں
     messageBox.textContent = "";
     messageBox.classList.remove("error");
     messageBox.style.display = "none"; 
@@ -125,7 +124,6 @@ function addTask() {
 }
 
 // ====== Empty State Check ======
-// یہ فنکشن اب "No tasks yet" کو صحیح طرح ہینڈل کرے گا
 function checkEmpty() {
     if (taskList.children.length === 0) {
         emptyState.style.display = "block";
@@ -169,3 +167,4 @@ searchInput.addEventListener("input", () => {
 // ====== Load on Page Start ======
 
 window.onload = loadTasks;
+
