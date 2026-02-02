@@ -1,16 +1,16 @@
-# TaskBuddy Pro – To-Do List Application
+TaskBuddy Pro: To-Do List Application.
 
-TaskBuddy Pro is a responsive To-Do List web application built using HTML, CSS, and Vanilla JavaScript.
+TaskBuddy Pro is a reactant To-Do List web client developed in HTML, CSS and Vanilla JavaScript.
 
 ## Features
-- Add, edit, delete, and complete tasks
-- Real-time search functionality
-- Input validation and duplicate prevention
-- LocalStorage-based data persistence
-- Responsive design for all devices
+- Add, update and delete tasks and complete tasks.
+- Search feature in real-time.
+- Checking of the inputs and eliminating duplicates.
+- Data storage- LocalStorage.
+- All devices responsive design.
 
 ## Technologies Used
-HTML5, CSS3, JavaScript 
+HTML5, CSS3, JavaScript
 
 ## Author
 Tahira Batool
